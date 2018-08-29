@@ -7,5 +7,5 @@ export default {
     startScan: function (preference: ?number) {
         ReactNativeAndroidScanner.startScan(preference)
     },
-    SCANNED_RESULT: ReactNativeAndroidScanner.SCANNED_RESULT,
+    SCANNED_RESULT: ReactNativeAndroidScanner ? ReactNativeAndroidScanner.SCANNED_RESULT : null,
   };
